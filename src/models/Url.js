@@ -3,7 +3,6 @@ const Schema = appMongoose.Schema;
 const schema = new appMongoose.Schema({
   url: {
     type: String,
-    unique: true,
     required: true
   },
   slug: {

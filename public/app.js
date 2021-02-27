@@ -24,6 +24,8 @@ const app = new Vue({
         const result = await response.json();
         this.formVisible = false;
         this.created = `${result.slug}`;
+      } else if (response.status === 400) {
+        this.error = 'Slug is Already in Use';
       } else if (response.status === 429) {
         this.error =
           'You are sending too many requests. Try again in 30 seconds.';

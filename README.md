@@ -1,4 +1,4 @@
-# URL shortener with Node.js, MongoDB
+# URL shortener with QRCode Node.js, MongoDB
 
 > A Basic URL shortener with Vue
 
@@ -22,12 +22,38 @@ npm run dev
 
 ```json
 POST /url
-
 {
     "slug": "gh",
     "url": "https://github.com/"
 }
+```
 
+```json
 GET /gh
+```
+
+## Frontend localhost:5000/
+
+## Input: Url
 
 ```
+localhost:5000/qr
+
+"slug": "gh",
+"url": "https://github.com/"
+
+```
+
+## Output:
+
+```
+gh
+```
+
+
+## Input: Url QRCode 
+
+```
+localhost:5000/qr
+```
+

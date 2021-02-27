@@ -15,7 +15,7 @@ exports.createUrl = async (req, res) => {
       let dataError = {
         error: 'Slug in use. 🍔'
       };
-      return res.send(dataError);
+      return res.status(400).send(dataError);
     }
   }
   slug = slug.toLowerCase();
